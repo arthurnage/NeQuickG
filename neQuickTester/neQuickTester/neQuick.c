@@ -913,9 +913,9 @@ double NeqGetF2FreqFromCCIR( double dCosLat, double dLng, double* pdLegCoeffs,
         for ( i = 0; i <= nq[k]; i++ ) {
             
             R = 0;
-            for ( l = 0; l <= k - 1; l++ ) /* k instead of k1 -bug*/
+            for ( l = 0; l <= k - 1; l++ )
                 R += nq[l];
-            R += k; /*k instead of k1*/
+            R += k;
             R *= 2;
             R -= nq[0] + 1;
             
